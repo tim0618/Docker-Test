@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  # 1. 你的 C# 後端
+  backend-api:
+    build: ./DockerBE      # <-- 這裡改成了你的後端資料夾名稱
+    ports:
+      - "8080:8080"
+
+  # 2. 你的 Vue 前端
+  frontend-vue:
+    build: ./DockerFE      # <-- 這裡改成了你的前端資料夾名稱
+    ports:
+      - "80:80"
+    depends_on:
+      - backend-api

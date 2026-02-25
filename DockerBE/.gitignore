@@ -1,0 +1,22 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.http
+
+# IDE settings
+.vs/
+
+# Secrets / config
+appsettings.Development.json
+appsettings.Production.json
+*.secret.json
+
+# OS junk
+*.DS_Store
+Thumbs.db
