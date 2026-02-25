@@ -10,7 +10,7 @@ const errorMsg = ref('')
 onMounted(async () => {
   try {
     // 打向你本機的 C# API 網址
-    const response = await fetch('http://localhost:8888/weatherforecast')
+    const response = await fetch('http://localhost:8080/weatherforecast')
     if (!response.ok) {
       throw new Error('網路連線失敗')
     }
